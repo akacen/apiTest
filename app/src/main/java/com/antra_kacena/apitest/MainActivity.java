@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Log.i("Praktiskais", "response:" + response.toString());
+
                 try {
                     JSONArray fact = response.getJSONArray("data");
 
